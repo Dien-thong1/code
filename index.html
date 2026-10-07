@@ -3,20 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
-<link rel="manifest" href="./manifest.json">
+<link rel="manifest" href="/edit/manifest.json">
 <meta name="theme-color" content="#1e1e2e">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Live Editor">
 <title>Live Editor</title>
+
 <script>
 if ("serviceWorker" in navigator) {
   addEventListener("load", function () {
-    navigator.serviceWorker.register("./sw.js").catch(function () {});
+    navigator.serviceWorker.register("/edit/sw.js", { scope: "/edit/" }).catch(function () {});
   });
 }
 </script>
+
 <style>
   :root { --bg:#fff; --ed:#1e1e2e; --sf:#313244; --sf2:#45475a; --fg:#cdd6f4; --dim:#9399b2; --bubble:#7c3aed; --acc:#b4a0ff; --red:#f38ba8; --grn:#a6e3a1; }
   * { box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
