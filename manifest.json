@@ -1,8 +1,8 @@
 {
   "name": "Edit",
   "short_name": "Edit",
-  "start_url": "/edit/",
-  "scope": "/edit/",
+  "start_url": "./",
+  "scope": "./",
   "display": "fullscreen",
   "orientation": "portrait",
   "background_color": "#1d1c1a",
@@ -20,3 +20,4 @@
     }
   ]
 }
+Này hả
